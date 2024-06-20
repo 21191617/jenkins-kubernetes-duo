@@ -1,9 +1,10 @@
 pipeline {
     agent any
-    environment {
-
-    }
     stages {
+        stage ('build')
+            step { 
+                sh run.sh
+            }
         stage('Deploy App') {
             steps {
                 sh '''
