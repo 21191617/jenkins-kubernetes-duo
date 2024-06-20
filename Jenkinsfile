@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh '''
                 kubectl apply -f .
-                kubectl rollout restart deployment nginx
+                kubectl rollout restart deployment nginx-deployment
                 '''                
             }
         }
